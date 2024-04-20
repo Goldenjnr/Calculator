@@ -1,0 +1,77 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+:root {
+  --bg-color: #4CE0B3;
+  --second-bg-color: #CB2C00;
+  --third-color: #ED4A55;
+}
+
+body {
+  font-size: 15pt;
+  height: 100vh;
+  background-color: ghostwhite;
+}
+
+button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: midnightblue;
+  background-color: transparent;
+  border: none;
+  border-radius: 100%;
+  width: 75px;
+  height: 75px;
+  margin: auto;
+  font-size: 40px
+}
+
+button:last-child {
+  background-color: var(--second-bg-color);
+  color: ghostwhite;
+  padding-bottom: 10px;
+}
+
+button.digit.operator {
+  background-color: var(--bg-color);
+}
+
+button.digit.but {
+  color: var(--third-color);
+}
+
+.container {
+  display: grid;
+  position: fixed;
+  bottom: 40px;
+  right: 0;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 100%;
+  margin: auto;
+  row-gap: 20px;
+  column-gap: 0;
+}
+
+#input {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  position: fixed;
+  bottom: 520px;
+  left : 10%;
+  height: 100%;
+  width: 90%;
+  font-size: 60px;
+  color: #000;
+  z-index: 1;
+  font-weight: 500;
+  word-wrap: break-word;
+  white-space: normal;
+  /* color: midnightblue; */
+  height: 30%;
+}
