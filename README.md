@@ -1,1 +1,1 @@
-This is a caluclator built using HTML, CSS and JavaScript
+This is a Caluclator built using HTML, CSS and JavaScript
