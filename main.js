@@ -9,11 +9,15 @@ function inputText() {
     text = eval(text);
     console.log(text)
   } else if (buttonText === "C") {
-    text = ''
+    text = '0'
     console.log(text)
+  // } else if (buttonText === "x" && buttonText === "÷" ) {
+  //   text += "*"
+  //   console.log(text)
+    
   } else if (buttonText === "×") {
     text += "*"
-  }  else if (buttonText === "^2") {
+  } else if (buttonText === "^2") {
     x = text ** 2
     return(text = x)
   } else if (buttonText === "%") {

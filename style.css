@@ -8,12 +8,14 @@
   --bg-color: #4CE0B3;
   --second-bg-color: #CB2C00;
   --third-color: #ED4A55;
+  --fourth-color: #000;
 }
 
 body {
   font-size: 15pt;
   height: 100vh;
   background-color: ghostwhite;
+  /* background-color: black; */
 }
 
 button{
@@ -21,7 +23,8 @@ button{
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  color: midnightblue;
+  color: whitesmoke;
+  /* color: midnightblue; */
   background-color: transparent;
   border: none;
   border-radius: 100%;
@@ -39,21 +42,27 @@ button:last-child {
 
 button.digit.operator {
   background-color: var(--bg-color);
+  color: #000;
+}
+
+button.digit {
+  background-color: orangered
 }
 
 button.digit.but {
-  color: var(--third-color);
+  color: var(--fourth-color);
 }
 
 .container {
   display: grid;
   position: fixed;
-  bottom: 40px;
+  bottom: 0px;
   right: 0;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   width: 100%;
   margin: auto;
   row-gap: 20px;
+  background-color: #000;
   column-gap: 0;
 }
 
@@ -62,7 +71,7 @@ button.digit.but {
   justify-content: flex-end;
   flex-direction: column;
   position: fixed;
-  bottom: 520px;
+  bottom: 480px;
   left : 10%;
   height: 100%;
   width: 90%;
