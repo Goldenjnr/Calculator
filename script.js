@@ -3,7 +3,7 @@ let text = ""
 function inputText(buttonText) {
     if (buttonText === "=") {
         try {
-            text = eval(text.replace('÷','/').replace('x','*').replace('^2','**2').replace('%', '/100'))
+            text = eval(text.replace('÷', '/').replace('x', '*').replace('^2', '**2').replace('%', '/100'))
             document.getElementById("input").innerText = text
         } catch (e) {
             document.getElementById("input").innerText = "Error"
@@ -11,6 +11,7 @@ function inputText(buttonText) {
     } else if (buttonText === "C") {
         text = ''
         document.getElementById("input").innerText = text
+        document.getElementById("icon").style.display = "block"
     } else if (buttonText === "←") {
         text = text.slice(0, -1)
         document.getElementById("input").innerText = text
@@ -32,6 +33,8 @@ function inputText(buttonText) {
     } else {
         text += buttonText
         document.getElementById("input").innerText = text
+        document.getElementById("icon").style.display = "none"
+
     }
 }
 
