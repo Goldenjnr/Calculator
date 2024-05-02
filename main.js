@@ -20,6 +20,9 @@ function inputText() {
     buttonText === "+" ||
     buttonText === "-"
   ) {
+    if (text === "" && buttonText !== "-") {
+      return;
+    }
     let lastChar = text[text.length - 1];
     if (
       lastChar === "*" ||
