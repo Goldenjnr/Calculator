@@ -10,7 +10,7 @@ function inputText() {
     console.log(text);
   } else if (buttonText === "C") {
     text = "0";
-    console.log(text);
+    showText = ""
     // } else if (buttonText === "x" && buttonText === "÷" ) {
     //   text += "*"
     //   console.log(text)
@@ -42,8 +42,8 @@ function inputText() {
     x = text ** 2;
     return (text = x);
   } else if (buttonText === "%") {
-    x = text / 100;
-    return (text = x);
+    let x = parseFloat(text) /100
+    text = x.toString()
   } else if (buttonText === "←") {
     text = text.slice(0, -1);
     showText += text;
@@ -52,8 +52,12 @@ function inputText() {
   } else if (buttonText === "÷") {
     text += "/";
   } else {
-    text += buttonText;
-    showText += buttonText;
+    if (text === "0") {
+      text = buttonText
+    } else {
+      text += buttonText;
+    }
+    showText += buttonText
     console.log(text);
     console.log("Show: " + showText);
   }

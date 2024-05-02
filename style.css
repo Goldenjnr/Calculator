@@ -18,14 +18,6 @@ body {
   /* background-color: black; */
 }
 
-#icon{
-  display: none;
-  font-size: 300%;
-  color: burlywood;
-  position: relative;
-  top: 25%;
-}
-
 button{
   display: flex;
   justify-content: center;
