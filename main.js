@@ -39,8 +39,8 @@ function inputText() {
   } else if (buttonText === "×") {
     text += "*";
   } else if (buttonText === "^2") {
-    x = text ** 2;
-    return (text = x);
+    let x = parseFloat(text) ** 2
+    text = x.toString()
   } else if (buttonText === "%") {
     let x = parseFloat(text) /100
     text = x.toString()
